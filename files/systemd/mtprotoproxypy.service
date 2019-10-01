@@ -1,0 +1,15 @@
+[Unit]
+Description=MTProto Proxy Python with TLS suppot
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/mtprotoproxy.py /etc/mtprotoproxypy/mtprotoproxypy.conf
+User=nobody
+Restart=on-failure
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=mtprotoproxy
+
+[Install]
+WantedBy=multi-user.target
