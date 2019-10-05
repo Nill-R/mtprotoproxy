@@ -7,7 +7,7 @@ Fast and simple to setup MTProto proxy written in Python.
 1. `git clone https://github.com/Nill-R/mtprotoproxy.git; cd mtprotoproxy`
 2. Edit *config.py*, set **PORT**, **USERS** and **AD_TAG**
 3. Copy config for rsyslog, systemd-unit, fail2ban filter to directories for it. Create fail2ban jail and restart fail2ban.
-4. `mkdir /etc/mtprotoproxypy/; cp config.py /etc/mtprotoproxypy/mtprotoproxy.conf`
+4. `mkdir /etc/mtprotoproxypy/; cp config.py /etc/mtprotoproxypy/mtprotoproxypy.conf`
 5. `cp mtprotoproxy.py /usr/local/bin/`
 6. `mkdir /var/log/mtprotoproxypy/;chown syslog /var/log/mtprotoproxypy`
 7. `systemctl daemon-reload; systemctl enable mtprotoproxypy; systemctl start mtprotoproxypy`
