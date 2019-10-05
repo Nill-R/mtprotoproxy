@@ -9,7 +9,7 @@ User=nobody
 Restart=on-failure
 StandardOutput=syslog
 StandardError=syslog
-SyslogIdentifier=mtprotoproxy
+SyslogIdentifier=mtprotoproxypy
 
 [Install]
 WantedBy=multi-user.target
