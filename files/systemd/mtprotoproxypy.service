@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=simple
 ExecStart=/usr/local/bin/mtprotoproxy.py /etc/mtprotoproxypy/mtprotoproxypy.conf
-User=nobody
+DynamicUser=yes
 Restart=on-failure
 StandardOutput=syslog
 StandardError=syslog
